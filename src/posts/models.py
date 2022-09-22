@@ -10,7 +10,7 @@ class BlogPost(models.Model):
 	author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 	last_updated = models.DateTimeField(auto_now=True)
 	created_on = models.DateField(blank=True, null=True)
-	puplished = models.BooleanField(default=False, verbose_name="Published")
+	published = models.BooleanField(default=False, verbose_name="Published")
 	content = models.TextField(blank=True, verbose_name="content")
 
 	class Meta:
