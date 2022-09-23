@@ -8,7 +8,7 @@
 	{% for post in posts %}
 	<article>
 		<h1>{{ post.title}}</h1>
-		<h5> Published by <i>{{ post.author.username}}</i> at {{ post.created_on|date:'j F Y'}}</h5>
+		<h5> Published by <i> {{ post.author_or_default }} </i> at {{ post.created_on|date:'j F Y'}}</h5>
 		<p>{{ post.content|safe|truncatewords:50}}</p>
 	</article>
 
