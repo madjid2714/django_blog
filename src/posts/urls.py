@@ -4,5 +4,5 @@ from posts.views import BlogHome
 app_name = "posts"
 
 urlpatterns = [
-    path('', BlogHome.as_view, name='home'),
+    path('', BlogHome.as_view(), name='home'),
 ]
