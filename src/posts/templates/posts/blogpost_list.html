@@ -8,8 +8,17 @@
 	{% for post in posts %}
 	<article>
 		<h1>{{ post.title}}</h1>
+		<div>
+			{% if request.user.is_authenticated %}
+				<a href="{% url 'posts:edit' slug=post.slug %}"> Edit Post </a>
+				<a href="{% url 'posts:delete' slug=post.slug %}"> Delete Post </a>
+			{% endif %}
+		</div>
 		<h5> Published by <i> {{ post.author_or_default }} </i> at {{ post.created_on|date:'j F Y'}}</h5>
 		<p>{{ post.content|safe|truncatewords:50}}</p>
+		<form action="{% url 'posts:post' slug=post.slug %}"> 
+			<button> Read more </button>
+		</form>
 	</article>
 
 
