@@ -8,7 +8,7 @@
 <form method="POST">
 	{% csrf_token %}
 	<p> Are you sur to delete this post "{{ post.title }}" ?</p>
-	<input type="submit" value="Delete">
+	<input class="btn btn-delete" type="submit" value="Delete">
 	
 </form>
 {%  endblock %}
