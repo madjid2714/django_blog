@@ -6,6 +6,7 @@
 {% block content %}
 <article class="post-detail">
 	<h1>{{ post.title}}</h1>
+	<img src="{{ post.thumbnail.url }}" alt="post image" style="width: 500px;">
 	<div>{{ post.content|linebreaks|safe}}</div>
 </article>
 {%  endblock %}

@@ -19,6 +19,9 @@
 		</div>
 
 		<h5 class="post-author"> Published by <i> {{ post.author_or_default }} </i> at {{ post.created_on|date:'j F Y'}}</h5>
+		{% if post.thumbnail %}
+			<img class="post-image" src="{{ post.thumbnail.url }}" alt="post image">
+		{% endif %}
 		<p class="post-excerpt">{{ post.content|safe|truncatewords:50}}</p>
 		<form action="{% url 'posts:post' slug=post.slug %}"> 
 			<button class="btn btn-submit"> Read more </button>
