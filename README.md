@@ -8,7 +8,32 @@ A blog application made on Django.
 ![alt text](https://github.com/madjid2714/django_blog/blob/main/Edit-Post.png)
 ![alt text](https://github.com/madjid2714/django_blog/blob/main/Delete-Post.png)
 
+# post hearchy 
 
+```
+posts/
+│
+├── migrations/
+│   └── __init__.py
+├── static
+│   └── css
+│       ├── reset.css
+│       └── style.css
+├── templates
+│   └── posts
+│       ├── blogpost_confirm_delete.html
+│       ├── blogpost_create.html
+│       ├── blogpost_detail.html
+│       ├── blogpost_edit.html
+│       └── blogpost_list.html
+├── __init__.py
+├── admin.py
+├── apps.py
+├── models.py
+├── test.py
+├── urls.py
+
+```
 # Description
 This is a simple responsive blog application made with django ,where i used a simple CRUD operations
 
