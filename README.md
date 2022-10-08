@@ -8,6 +8,9 @@ A blog application made on Django.
 ![alt text](https://github.com/madjid2714/django_blog/blob/main/Edit-Post.png)
 ![alt text](https://github.com/madjid2714/django_blog/blob/main/Delete-Post.png)
 
+# Description
+This is a simple responsive blog application made with django ,where i used a simple CRUD operations
+
 # post structure 
 
 ```
@@ -34,10 +37,6 @@ posts/
 ├── urls.py
 
 ```
-# Description
-This is a simple responsive blog application made with django ,where i used a simple CRUD operations
-
-# project hearchey
 
 # Setup
 Clone project
